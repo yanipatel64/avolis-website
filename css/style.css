@@ -248,7 +248,7 @@ header nav a:hover {
 }
 
 .service-card {
-    background: #fff;
+    background: linear-gradient(135deg, #00aaff, #1e1e2f);
     padding: 2rem;
     border-radius: 15px;
     width: 300px;
