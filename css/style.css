@@ -355,3 +355,17 @@ footer .social-icons a:hover {
     font-weight: 500;
     margin-top: 10px;
 }
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #333; /* change to white if on dark bg */
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* hover effect */
+}
