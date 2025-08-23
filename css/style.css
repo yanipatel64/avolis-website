@@ -175,10 +175,10 @@ header nav a:hover {
     position: absolute;
     width: 120px;
     height: 120px;
-    border: 2px solid #4facfe;  /* outline only */
+    border: 2px solid #0a3b65;  /* outline only */
     border-radius: 15px;        /* slight rounding like your image */
     top: 30%;
-    right: 20%;
+    right: 30%;
     opacity: 0.6;
     animation: spin 8s linear infinite;
 }
