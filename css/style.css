@@ -242,10 +242,10 @@ header nav ul li a:hover {
 }
 
 .testimonial-card {
-    background: #f0f4f8;
+    background: #000307;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(9, 0, 0, 0.1);
 }
 
 .testimonial-card h4 {
@@ -255,7 +255,7 @@ header nav ul li a:hover {
 /* Contact */
 .contact {
     padding: 4rem 2rem;
-    background: #f0f4f8;
+    background: #000103;
     text-align: center;
 }
 
@@ -278,7 +278,7 @@ header nav ul li a:hover {
     padding: 1rem;
     border: none;
     border-radius: 5px;
-    background: #00aaff;
+    background: #000305;
     color: #fff;
     font-weight: 600;
     cursor: pointer;
