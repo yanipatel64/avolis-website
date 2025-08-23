@@ -238,6 +238,7 @@ header nav a:hover {
 .services {
     padding: 4rem 2rem;
     background: #000;
+    color: #fff
 }
 
 .service-cards {
