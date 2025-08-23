@@ -154,16 +154,18 @@ header nav a:hover {
 .shape.circle {
     width: 120px;
     height: 120px;
-    background: #4facfe;
+    border: 2px solid rgba(79, 172, 254, 0.6); /* soft blue outline */
     border-radius: 50%;
     top: 20%;
     left: 10%;
+    background: transparent; /* no fill */
 }
 
 .shape.square {
     width: 100px;
     height: 100px;
-    background: #00f2fe;
+    border: 2px solid rgba(0, 242, 254, 0.6); /* soft cyan outline */
+    background: transparent; /* no fill */
     bottom: 15%;
     right: 15%;
     animation-duration: 8s;
