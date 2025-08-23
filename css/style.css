@@ -86,15 +86,18 @@ header nav a:hover {
   left: 50%;
   width: 600px;
   height: 600px;
+  border: 2px solid rgba(140, 255, 0, 0.5);
+  border-radius: 50%;
   background: radial-gradient(circle, rgba(72,255,0,0.3) 0%, rgba(0,0,0,0) 70%);
   transform: translate(-50%, -50%);
+  animation: pulseCircle 6s infinite ease-in-out;
   filter: blur(120px);
   z-index: 0; /* stays behind text */
 }
 
 .hero-content {
     max-width: 700px;
-    z-index: 10;
+    z-index: 1;
     position: relative;
 }
 
@@ -336,6 +339,21 @@ footer .social-icons a:hover {
 /* Animations */
 @keyframes fadeUp {
     to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseCircle {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
 }
 
 @keyframes zoomIn {
