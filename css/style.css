@@ -71,7 +71,7 @@ header nav a:hover {
     width: 100%;
     padding: 140px 20px 60px;
     color: white;
-    background: linear-gradient(135deg, #1e3c72, #2a5298, #0b1e4a);
+    background: linear-gradient(135deg, #07152f, #000102, #0b1e4a);
     background-size: 600% 600%;
     animation: gradientBG 15s ease infinite;
     position: relative;
