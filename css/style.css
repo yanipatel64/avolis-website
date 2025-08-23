@@ -271,17 +271,16 @@ header nav a:hover {
 /* Testimonials */
 .testimonials {
     padding: 4rem 2rem;
-    background: #080000;
+    background: #000;
     text-align: center;
     color: #f9f6f6;
 }
 
 .testimonial-card {
-    background: #000;
+    background: #fff;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(255,255,255,0.1);
-}
+    box-shadow: 0 8px 20px #000
 
 .testimonial-card h4 {
     margin-top: 1rem;
