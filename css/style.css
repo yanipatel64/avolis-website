@@ -58,7 +58,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #00aaff;
+    color: #000;
 }
 
 /* Hero */
@@ -109,8 +109,8 @@ header nav a:hover {
 .hero .btn {
     text-decoration: none;
     padding: 1rem 2rem;
-    background: #ffffff22;
-    color: white;
+    background: #fff;
+    color: #000;
     font-weight: 600;
     border-radius: 50px;
     transition: all 0.3s ease;
