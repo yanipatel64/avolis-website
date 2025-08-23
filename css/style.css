@@ -167,7 +167,7 @@ header nav ul li a:hover {
 }
 
 .feature-card .icon {
-    width: 80px;
+    /*width: 80px;
     height: 80px;
     border-radius: 50%;
     background: rgba(255,255,255,0.2);
@@ -175,7 +175,8 @@ header nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.3s;
+    transition: background 0.3s;*/
+    display: none;
 }
 
 .feature-card .icon img {
