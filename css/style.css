@@ -245,9 +245,9 @@ header nav ul li a:hover {
 .testimonial-card {
     background: #000;
     padding: 2rem;
-    border-radius: 15px;
+    border-radius: 15px linear-gradient(to right, #befc06, #e1f007);
     box-shadow: 0 8px 20px #fff;
-    outline: linear-gradient(to #efeb10, #7cd226, #0df730) 1;
+    
 }
 
 .testimonial-card h4 {
