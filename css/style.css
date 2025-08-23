@@ -277,7 +277,7 @@ header nav a:hover {
 }
 
 .testimonial-card {
-    background: #000;
+    background: linear-gradient(135deg, #00aaff, #1e1e2f);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(255,255,255,0.1);
