@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avolis - Innovative Tech Solutions</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- AOS Animation -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/avolis-logo.png" alt="Avolis Logo">
+                </a>
+            </div>
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Innovative Tech Solutions for Your Business</h1>
+            <p>Empowering organizations with AI, software, and analytics to achieve sustainable growth.</p>
+            <a href="#features" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Features</h2>
+            <div class="feature-cards">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><img src="images/feature1.png" alt="AI Solutions"></div>
+                    <h3>AI-Powered Solutions</h3>
+                    <p>Integrate advanced AI to optimize your business processes and decision-making.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon"><img src="images/feature2.png" alt="Custom Software"></div>
+                    <h3>Custom Software</h3>
+                    <p>Tailored software solutions to meet your unique business needs efficiently.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon"><img src="images/feature3.png" alt="Analytics"></div>
+                    <h3>Analytics & Insights</h3>
+                    <p>Data-driven insights to help you make smarter, faster, and more accurate decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container" data-aos="fade-right">
+            <h2 class="section-title">About Avolis</h2>
+            <p>Avolis is a modern tech startup focused on providing innovative AI-powered solutions, custom software development, and analytics tools to empower businesses and drive growth. Our mission is to help organizations embrace technology effectively and stay ahead in the digital world.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/service1.png" alt="AI Integration">
+                    <h3>AI Integration</h3>
+                    <p>Implement AI solutions to automate workflows and improve efficiency.</p>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/service2.png" alt="Software Development">
+                    <h3>Software Development</h3>
+                    <p>Custom software tailored to your business requirements and goals.</p>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="images/service3.png" alt="Analytics Solutions">
+                    <h3>Analytics Solutions</h3>
+                    <p>Extract actionable insights from data to make informed business decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">What Our Clients Say</h2>
+            <div class="swiper mySwiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide testimonial-card">
+                        <p>"Avolis transformed our business with their AI solutions. Truly remarkable!"</p>
+                        <h4>- John Doe</h4>
+                    </div>
+                    <div class="swiper-slide testimonial-card">
+                        <p>"The custom software delivered by Avolis increased our operational efficiency significantly."</p>
+                        <h4>- Jane Smith</h4>
+                    </div>
+                    <div class="swiper-slide testimonial-card">
+                        <p>"Professional, innovative, and results-driven. Highly recommend Avolis."</p>
+                        <h4>- Mark Johnson</h4>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">Contact Us</h2>
+            <form action="https://formspree.io/f/xovlgbee" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2025 Avolis. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
