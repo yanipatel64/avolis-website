@@ -140,7 +140,7 @@ header nav ul li a:hover {
 
 /* Features */
 .features {
-    background: #f0f4f8;
+    background: #000;
     padding: 4rem 2rem;
 }
 
@@ -216,7 +216,7 @@ header nav ul li a:hover {
 }
 
 .service-card {
-    background: #000;
+    background: #fff;
     padding: 2rem;
     border-radius: 15px;
     width: 300px;
