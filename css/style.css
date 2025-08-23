@@ -78,6 +78,20 @@ header nav a:hover {
     overflow: hidden;
 }
 
+/* glowing effect behind text */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(72,255,0,0.3) 0%, rgba(0,0,0,0) 70%);
+  transform: translate(-50%, -50%);
+  filter: blur(120px);
+  z-index: 0; /* stays behind text */
+}
+
 .hero-content {
     max-width: 700px;
     z-index: 10;
