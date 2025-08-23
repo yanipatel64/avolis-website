@@ -239,6 +239,7 @@ header nav ul li a:hover {
     padding: 4rem 2rem;
     background: #fff;
     text-align: center;
+    color: #fff;
 }
 
 .testimonial-card {
@@ -257,6 +258,7 @@ header nav ul li a:hover {
     padding: 4rem 2rem;
     background: #000103;
     text-align: center;
+    color: #fff;
 }
 
 .contact form {
