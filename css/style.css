@@ -170,6 +170,25 @@ header nav a:hover {
     right: 15%;
     animation-duration: 8s;
 }
+/* Rotating square spinner */
+.shape.spinner {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #4facfe;  /* outline only */
+    border-radius: 15px;        /* slight rounding like your image */
+    top: 30%;
+    right: 20%;
+    opacity: 0.6;
+    animation: spin 8s linear infinite;
+}
+
+/* Keyframes for spinning */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 
 /* Section Titles */
 .section-title {
