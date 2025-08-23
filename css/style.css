@@ -22,14 +22,14 @@ body {
 /* Header */
 header {
     width: 100%;
-    background: #000000; /* semi-transparent dark background */
+    background: #000000;
     padding: 15px 20px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Safari fallback */
+    -webkit-backdrop-filter: blur(10px);
 }
 
 header .container {
@@ -50,26 +50,15 @@ header nav ul {
     gap: 2rem;
 }
 header nav a {
-    color: #ffffff;       /* white font color */
-    text-decoration: none; /* remove underline */
-    font-weight: 500;      /* medium font weight */
-    margin-left: 20px;     /* spacing between links */
-    transition: color 0.3s ease; /* smooth hover effect */
-}
-
-header nav a:hover {
-    color: #00aaff;        /* optional hover color */
-}
-
-header nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 500;
+    margin-left: 20px;
     transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: #fff;
+header nav a:hover {
+    color: #00aaff;
 }
 
 /* Hero */
@@ -86,10 +75,13 @@ header nav ul li a:hover {
     background-size: 600% 600%;
     animation: gradientBG 15s ease infinite;
     position: relative;
+    overflow: hidden;
 }
 
 .hero-content {
     max-width: 700px;
+    z-index: 10;
+    position: relative;
 }
 
 .hero h1 {
@@ -100,7 +92,8 @@ header nav ul li a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
-    animation: fadeIn 2s forwards;
+    transform: translateY(40px);
+    animation: fadeUp 1.2s ease forwards;
 }
 
 .hero p {
@@ -108,8 +101,9 @@ header nav ul li a:hover {
     margin-bottom: 2rem;
     max-width: 700px;
     opacity: 0;
-    animation: fadeInText 2s forwards;
-    animation-delay: 1s;
+    transform: translateY(40px);
+    animation: fadeUp 1.2s ease forwards;
+    animation-delay: 0.5s;
 }
 
 .hero .btn {
@@ -121,13 +115,41 @@ header nav ul li a:hover {
     border-radius: 50px;
     transition: all 0.3s ease;
     opacity: 0;
-    animation: fadeInText 2s forwards;
-    animation-delay: 1.5s;
+    transform: scale(0.8);
+    animation: zoomIn 0.8s ease forwards;
+    animation-delay: 1.2s;
 }
 
 .hero .btn:hover {
     background: #ffffff44;
     transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+
+/* Floating background shapes */
+.shape {
+    position: absolute;
+    opacity: 0.2;
+    animation: float 6s ease-in-out infinite;
+    z-index: 1;
+}
+
+.shape.circle {
+    width: 120px;
+    height: 120px;
+    background: #4facfe;
+    border-radius: 50%;
+    top: 20%;
+    left: 10%;
+}
+
+.shape.square {
+    width: 100px;
+    height: 100px;
+    background: #00f2fe;
+    bottom: 15%;
+    right: 15%;
+    animation-duration: 8s;
 }
 
 /* Section Titles */
@@ -163,29 +185,7 @@ header nav ul li a:hover {
 
 .feature-card:hover {
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
-}
-
-.feature-card .icon {
-    /*width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.2);
-    margin: 0 auto 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s;*/
-    display: none;
-}
-
-.feature-card .icon img {
-    width: 40px;
-    height: 40px;
-}
-
-.feature-card:hover .icon {
-    background: rgba(255,255,255,0.4);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
 }
 
 /* About */
@@ -246,9 +246,8 @@ header nav ul li a:hover {
 .testimonial-card {
     background: #000;
     padding: 2rem;
-    border-radius: 15px linear-gradient(to right, #befc06, #e1f007);
-    box-shadow: 0 8px 20px #fff;
-    
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(255,255,255,0.1);
 }
 
 .testimonial-card h4 {
@@ -276,21 +275,29 @@ header nav ul li a:hover {
     border-radius: 5px;
     border: 1px solid #fff;
     font-size: 1rem;
+    background: transparent;
+    color: #fff;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: #00aaff;
+    outline: none;
 }
 
 .contact button {
     padding: 1rem;
     border: none;
     border-radius: 5px;
-    background: #000305;
+    background: #00aaff;
     color: #fff;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .contact button:hover {
-    background: #1e1e2f;
+    background: #0088cc;
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -313,20 +320,23 @@ footer .social-icons a:hover {
 }
 
 /* Animations */
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-20px); }
-    100% { opacity: 1; transform: translateY(0); }
+@keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes fadeInText {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+@keyframes zoomIn {
+    to { opacity: 1; transform: scale(1); }
 }
 
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
 }
 
 /* Responsive */
@@ -348,18 +358,22 @@ footer .social-icons a:hover {
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .hero p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
+
+/* Form Messages */
 #formMessage {
     font-size: 1rem;
     font-weight: 500;
     margin-top: 10px;
 }
+
+/* Social icons */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -369,11 +383,11 @@ footer .social-icons a:hover {
 }
 
 .social-icons a {
-    color: #333; /* change to white if on dark bg */
+    color: #fff;
     font-size: 20px;
     transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #007bff; /* hover effect */
+    color: #00aaff;
 }
