@@ -237,9 +237,9 @@ header nav ul li a:hover {
 /* Testimonials */
 .testimonials {
     padding: 4rem 2rem;
-    background: #fff;
+    background: #080000;
     text-align: center;
-    color: #000;
+    color: #f9f6f6;
 }
 
 .testimonial-card {
