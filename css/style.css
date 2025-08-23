@@ -191,8 +191,9 @@ header nav ul li a:hover {
 /* About */
 .about {
     padding: 4rem 2rem;
-    background: #fff;
+    background: #000;
     text-align: center;
+    color: #fff;
 }
 
 .about p {
@@ -204,7 +205,7 @@ header nav ul li a:hover {
 /* Services */
 .services {
     padding: 4rem 2rem;
-    background: #f0f4f8;
+    background: #000;
 }
 
 .service-cards {
@@ -215,7 +216,7 @@ header nav ul li a:hover {
 }
 
 .service-card {
-    background: #fff;
+    background: #000;
     padding: 2rem;
     border-radius: 15px;
     width: 300px;
