@@ -14,39 +14,27 @@ const formMessage = document.getElementById('formMessage');
 contactForm?.addEventListener('submit', function(e) {
     e.preventDefault(); // prevent page reload
 
-    const name = this.name.value.trim();
-    const email = this.email.value.trim();
-    const message = this.message.value.trim();
+    const formData = new FormData(contactForm);
 
-    if (name && email && message) {
-        // Display success message
-        formMessage.style.color = "green";
-        formMessage.innerText = `Thank you ${name}! Your message has been sent successfully.`;
-
-        // Reset form fields
-        this.reset();
-
-        // Optional: send form data to a server or service (Formspree, EmailJS, etc.)
-        // Example using fetch:
-        /*
-        fetch("https://formspree.io/f/yourFormID", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name, email, message })
-        }).then(response => {
-            if(response.ok){
-                formMessage.innerText = "Message sent successfully!";
-                contactForm.reset();
-            } else {
-                formMessage.style.color = "red";
-                formMessage.innerText = "Oops! Something went wrong.";
-            }
-        });
-        */
-    } else {
+    fetch("contact.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(res => res.text())
+    .then(data => {
+        if (data.includes("success")) {
+            formMessage.style.color = "green";
+            formMessage.innerText = "✅ Your message has been sent successfully!";
+            contactForm.reset();
+        } else {
+            formMessage.style.color = "red";
+            formMessage.innerText = "❌ Oops! Something went wrong. Please try again.";
+        }
+    })
+    .catch(() => {
         formMessage.style.color = "red";
-        formMessage.innerText = "Please fill in all fields correctly.";
-    }
+        formMessage.innerText = "⚠️ Network error. Try again later.";
+    });
 });
 
 // Initialize AOS
