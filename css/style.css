@@ -386,11 +386,11 @@ header nav a:hover {
 }
 
 .input-group textarea {
-  min-height: 120px;
+  min-height: 100px;
 }
 /* Specific height for textarea */
 .textarea-group textarea {
-  min-height: 120px;
+  min-height: 100px;
 }
 .input-group input:focus,
 .input-group textarea:focus {
