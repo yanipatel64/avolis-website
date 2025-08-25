@@ -380,13 +380,13 @@ header nav a:hover {
   border-radius: 8px;
   background: transperant;
   color: #fff;
+  font-size: 1rem;
   resize: none;
 }
 
 .input-group textarea {
   min-height: 120px;
-  resize: vertical;
-  padding-top: 12px;
+  line-height: 1.4rem;
 }
 /* Specific height for textarea */
 .textarea-group textarea {
