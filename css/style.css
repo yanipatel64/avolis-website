@@ -180,8 +180,8 @@ header nav a:hover {
 /* Extra small screens (phones < 480px) */
 @media (max-width: 480px) {
   .shape.spinner {
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
     bottom: 10px;
     right: 10px;
     opacity: 0.3; /* very subtle but visible */
