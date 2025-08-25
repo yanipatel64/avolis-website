@@ -97,7 +97,7 @@ header nav a:hover {
 
 .hero-content {
     max-width: 700px;
-    z-index: 1;
+    z-index: 2; /* above floating shapes */
     position: relative;
 }
 
@@ -175,6 +175,13 @@ header nav a:hover {
     background: transparent;    /* no fill */
     opacity: 0.6;
     animation: spin 8s linear infinite;
+    z-index: 0;
+}
+/* Extra small screens (phones < 480px) */
+@media (max-width: 480px) {
+  .shape.spinner {
+    display: none; /* hide if it still crowds the hero */
+  }
 }
 
 /* Keyframes for spinning */
@@ -412,6 +419,8 @@ footer .social-icons a:hover {
     .hero p {
         font-size: 1rem;
     }
+
+
 }
 
 /* Form Messages */
