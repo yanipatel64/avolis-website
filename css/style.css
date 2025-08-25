@@ -348,11 +348,23 @@ header nav a:hover {
 .input-group {
   position: relative;
   margin-bottom: 20px;
+  width: 100%;
+}
+/* For inputs (icon vertically centered) */
+.input-group input + i,
+.input-group input ~ i {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* For textarea (icon aligned at top-left) */
+.textarea-group i {
+  top: 15px;
+  transform: none;
 }
 
 .input-group i {
   position: absolute;
-  top: 50%;
   left: 12px;
   transform: translateY(-50%);
   color: #00aaff; /* match your theme */
@@ -366,7 +378,7 @@ header nav a:hover {
   padding: 0.8rem 0.8rem 0.8rem 40px; /* space for the icon */
   border: 1px solid #444;
   border-radius: 8px;
-  background: #111;
+  background: transperant;
   color: #fff;
   resize: none;
 }
@@ -376,7 +388,10 @@ header nav a:hover {
   resize: vertical;
   padding-top: 12px;
 }
-
+/* Specific height for textarea */
+.textarea-group textarea {
+  min-height: 120px;
+}
 .input-group input:focus,
 .input-group textarea:focus {
   outline: none;
