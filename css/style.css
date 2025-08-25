@@ -281,7 +281,7 @@ header nav a:hover {
 }
 
 /* Testimonials */
-.testimonials {
+/*.testimonials {
     padding: 4rem 2rem;
     background: #080000;
     text-align: center;
@@ -297,7 +297,7 @@ header nav a:hover {
 
 .testimonial-card h4 {
     margin-top: 1rem;
-}
+} */
 
 /* Contact */
 .contact {
