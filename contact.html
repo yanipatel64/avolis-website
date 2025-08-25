@@ -2,12 +2,31 @@
 <section class="contact" id="contact">
     <div class="container" data-aos="fade-up">
         <h2 class="section-title">Contact Us</h2>
-        <form id="contactForm">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <form action="https://formspree.io/f/xovlgbee" method="POST">
+
+  <div class="input-group">
+    <i class="fas fa-user"></i>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  </div>
+
+  <div class="input-group">
+    <i class="fas fa-phone"></i>
+    <input type="tel" id="contact" name="Contact" placeholder="Enter your contact number" required>
+  </div>
+
+  <div class="input-group">
+    <i class="fas fa-envelope"></i>
+    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+  </div>
+
+  <div class="input-group textarea-group">
+    <i class="fas fa-comment-dots"></i>
+    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+  </div>
+
+  <button type="submit">Send Message</button>
+</form>
+
         <!-- Feedback message will appear here -->
         <p id="formMessage" class="form-message"></p>
     </div>

@@ -344,6 +344,44 @@ header nav a:hover {
     background: #0088cc;
     transform: scale(1.05);
 }
+/* Contact Form Input Icons */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #00aaff; /* match your theme */
+  font-size: 16px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px 12px 12px 40px; /* space for the icon */
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+}
+
+.input-group textarea {
+  min-height: 120px;
+  resize: vertical;
+  padding-top: 12px;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #00aaff;
+  box-shadow: 0 0 5px #00aaff44;
+}
+
 
 /* Footer */
 footer {
